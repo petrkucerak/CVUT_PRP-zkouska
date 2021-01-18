@@ -431,6 +431,227 @@
             <p>Ne, pomocí knihovny <strong>stdbool.h</strong>.</p>
         </div>
     </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#044: Jak v C definujete ukazatel na proměnnou, např. typu int?
+            </h2>
+            <p>Ukazatel se defunuje takto: <em>int *ptr = &a;</em>
+            </p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#045: Jaká jsou v C omezení pro názvy proměnných a funkcí?
+            </h2>
+            <ul>
+                <li>název nesmí začínat číslem</li>
+                <li>název může obsahovat pouze a-z,A-Z,0-9</li>
+                <li>název se nesmí shodovat s klíčovými slovy</li>
+            </ul>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#046: Jaké znáte escape sekvence používané v C pro řídicí znaky?
+            </h2>
+            <p>Např. \n - nový řádek; \0 - null; ...</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#047: Jak jsou v C representovány textové řetězce?
+            </h2>
+            <p>Jako pole charů končící \0 (nullem).</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#048: Jak v C zapisujeme identifikátory (jména funkcí a proměnných)?
+            </h2>
+            <ul>
+                <li>Používáme pouze povolené znaky (a-z,A-Z,0-9)</li>
+                <li>makra a konstanty připravené pro preprocesor píšeme CAPSLOCKEM</li>
+                <li>Držíme se jednoho stylu konvence (např. camelcase nebo snake case)</li>
+                <li>Používáme jména funcí, které ji dobře vystihují. Případně doplníme kód komentářem</li>
+            </ul>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#049: Jakými dvěma způsoby lze v C vytvářet konstanty?
+            </h2>
+            <p>Definovat v preprocesoru nebo použitím klíčového slova const.</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#050: Popište výčtový typ jazyka C. Uveďte vlastnosti, které považujete za důležité?
+            </h2>
+            <p><em>Enum</em>, který se používá následujícím zpsůobem:</p>
+            <ul>
+                <li>konstanty výčtového typu jsou vždy celočíselné</li>
+                <li>Pokud konstantě nepřidělíme hodnotu, získá ji automaticky na základě indexování od nuly</li>
+                <li>Enum slouží k ulehčení práce a pro lepší přehlednost</li>
+            </ul>
+            <img src="/asset/img/image1.png">
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#051: Jaké znáte logické operátory jazyka C? Jak se zapisují?
+            </h2>
+            <ul>
+                <li>&& - AND</li>
+                <li>|| - OR</li>
+                <li>! - negace</li>
+            </ul>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#052: Jaké znáte bitové operátory jazyka C? Jak se zapisují?
+            </h2>
+            <ul>
+                <li>
+                    << - posun doleva</li>
+                <li>>> - posun doprava</li>
+                <li>& - bitové logické AND</li>
+                <li>| - bitové logické OR</li>
+                <li>^ - bitové logické XOR</li>
+                <li>~ s každým bitem operace NOT</li>
+            </ul>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#053: Jak v C realisujete dělení a násobení dvěma s využitím operátorů bitového posunu?
+            </h2>
+            <p>Násobení bitovým posunem doleva o jednu posici: x << 1 = x * 2.</p>
+            <p>Dělení bitovým posunem doprava o jednu posici: x>> 1 = x / 2.</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#054: Jak v C definujete složený typ (struct)?
+            </h2>
+            <p><em>struct my_struct{...};</em></p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#055: Jak zavedeme nový typ struktury, např. pojmenovaný my_struct_s.
+            </h2>
+            <p><em>typedef struct{...} my_structure;</em></p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#056: Kdy nemusíme psát před identifikátor určující jméno/typ struktury klíčové slovo struct?
+            </h2>
+            <p>Když je struktura nadefinovaná pomocí typedef.</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#057: Co je v jazyce C pointerová (ukazatelová) aritmetika a jak se používá?
+            </h2>
+            <p>Pointerová aritmetirka je soubor operací s ukazateli. (např. použití při vypisování pole atd.)</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                Plane text
+            </h2>
+            <p>Hello</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                Plane text
+            </h2>
+            <p>Hello</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                Plane text
+            </h2>
+            <p>Hello</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                Plane text
+            </h2>
+            <p>Hello</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                Plane text
+            </h2>
+            <p>Hello</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                Plane text
+            </h2>
+            <p>Hello</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                Plane text
+            </h2>
+            <p>Hello</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                Plane text
+            </h2>
+            <p>Hello</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                Plane text
+            </h2>
+            <p>Hello</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                Plane text
+            </h2>
+            <p>Hello</p>
+        </div>
+    </section>
     <footer class="footer">
         <div class="content has-text-centered">
             <p>
