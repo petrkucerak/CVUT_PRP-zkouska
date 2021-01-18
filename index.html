@@ -333,109 +333,102 @@
     <section class="section">
         <div class="container content">
             <h2 class="title is-4">
-                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
-                zvolíte právě tuto hodnotu?
+                @c#032: Jak zjistíme velikost representace datovýchtypů v jazyce C?
             </h2>
-            <p>0 - zvyk, konvence</p>
+            <p>Pomocí fce <em>sizeof()</em>.</p>
         </div>
     </section>
     <section class="section">
         <div class="container content">
             <h2 class="title is-4">
-                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
-                zvolíte právě tuto hodnotu?
+                @c#033: Je vždy v jazyce C velikost proměnné typu int 32 bitů?
             </h2>
-            <p>0 - zvyk, konvence</p>
+            <p>Ne, není. Záleží na kompilátoru a architektuře PC.</p>
         </div>
     </section>
     <section class="section">
         <div class="container content">
             <h2 class="title is-4">
-                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
-                zvolíte právě tuto hodnotu?
+                @c#034: Kdy je velikost ukazatele v jazyce C 32 bitů a kdy 64 bitů?
             </h2>
-            <p>0 - zvyk, konvence</p>
+            <p>Záleží na architektuře PC. 64-bitové mají 64-bitové ukazatele, 32-bitové systémy zas 32-bitové ukazatele.
+            </p>
         </div>
     </section>
     <section class="section">
         <div class="container content">
             <h2 class="title is-4">
-                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
-                zvolíte právě tuto hodnotu?
+                @c#035: Jak funguje modifikátor static při použití v definici lokální proměnné funkce v jazyce C?
             </h2>
-            <p>0 - zvyk, konvence</p>
+            <p>I po ukončení fce zůstane hodnota na static data, ale je je na ní možné dosáhnout pouze ze souboru, ve
+                kterém je deklarována.</p>
         </div>
     </section>
     <section class="section">
         <div class="container content">
             <h2 class="title is-4">
-                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
-                zvolíte právě tuto hodnotu?
+                @c#036: Jak funguje modifikátor extern při definici globální proměnné v jazyce C?
             </h2>
-            <p>0 - zvyk, konvence</p>
+            <p>Proměnná, která je vidět ve všech souborech.</p>
         </div>
     </section>
     <section class="section">
         <div class="container content">
             <h2 class="title is-4">
-                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
-                zvolíte právě tuto hodnotu?
+                @c#037: Jaké znáte základní znaménkové celočíselné typy v jazyce C?
             </h2>
-            <p>0 - zvyk, konvence</p>
+            <p>int, long, long long, short, signed char</p>
         </div>
     </section>
     <section class="section">
         <div class="container content">
             <h2 class="title is-4">
-                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
-                zvolíte právě tuto hodnotu?
+                @c#038: Rozlišuje jazyk C znaménkové a neznaménkové celočíselné typy? Pokud ano, co z toho plyne?
             </h2>
-            <p>0 - zvyk, konvence</p>
+            <p>Ano, rozlišuje. Neznaménkové tyy mají tudíž dvojnásobný rozsah.</p>
         </div>
     </section>
     <section class="section">
         <div class="container content">
             <h2 class="title is-4">
-                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
-                zvolíte právě tuto hodnotu?
+                @c#039: Jaké znáte neceločíselné typy v jazyce C? Jaká je jejich vnitřní representace (velikost)?
             </h2>
-            <p>0 - zvyk, konvence</p>
+            <p>double (64 bit), float (32 bit)</p>
+            <img src="/asset/img/floating-point-10-638.jpg">
         </div>
     </section>
     <section class="section">
         <div class="container content">
             <h2 class="title is-4">
-                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
-                zvolíte právě tuto hodnotu?
+                @c#040: Jsou v jazyce C definovány rozsahy neceločíselných typů?
             </h2>
-            <p>0 - zvyk, konvence</p>
+            <p>Ne, nejsou.</p>
         </div>
     </section>
     <section class="section">
         <div class="container content">
             <h2 class="title is-4">
-                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
-                zvolíte právě tuto hodnotu?
+                @c#041: Jsou v jazyce C definovány rozsahy celočíselných typů?
             </h2>
-            <p>0 - zvyk, konvence</p>
+            <p>Ano, jsou. U některých navíc záleží na typu architektury.</p>
         </div>
     </section>
     <section class="section">
         <div class="container content">
             <h2 class="title is-4">
-                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
-                zvolíte právě tuto hodnotu?
+                @c#042: Jak v C zajistíte proměnné celočíselného typu s konkrétním požadovaným rozsahem (tj. velikostí
+                datové representace)?
             </h2>
-            <p>0 - zvyk, konvence</p>
+            <p>Např. použítím proměných z knihovny <strong>stdin.h</strong>.</p>
         </div>
     </section>
     <section class="section">
         <div class="container content">
             <h2 class="title is-4">
-                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
-                zvolíte právě tuto hodnotu?
+                @c#043: Je součástí jazyka C typ logické hodnoty ,,true/false''? Pokud ano, jak se používá? Pokud ne,
+                jak jej definujete?
             </h2>
-            <p>0 - zvyk, konvence</p>
+            <p>Ne, pomocí knihovny <strong>stdbool.h</strong>.</p>
         </div>
     </section>
     <footer class="footer">
