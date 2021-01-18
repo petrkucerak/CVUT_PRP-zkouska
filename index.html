@@ -1,13 +1,175 @@
 <!DOCTYPE html>
 <html lang="cz">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/VAAAAAAAAP9UAAAAAAAA/1QAAAAAAAD/VAAAAAAAAP9UAAAAAAAA/1QAAAAAAAD/VAAAAAAAAP9UAAAAAAAAAAAAAP9UAAAAAAAA/1QAAAAAAAD/VAAAAAAAAP9UAAAAAAAA/1QAAAAAAAD/VAAAAAAAAP9UAAAAAAAA/1QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/4QAuf+EALn/hAC5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/4QA//+EAP8AAAAA/4QAuf+EAP//hAD//4QA//+EALkAAAAAAAAAAP+EAP//hAD/AAAAAAAAAAAAAAAA/4QA//+EAP8AAAAAAAAAAP+EALn/hABsAAAAAP+EAGz/hABsAAAAAAAAAAAAAAAA/4QA//+EAP8AAAAA/4QA//+EALkAAAAAAAAAAAAAAAD/hAD//4QAbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/hAC5/4QA//+EAP//hAC5AAAAAAAAAAAAAAAA/4QA//+EAGwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/4QAuf+EAP8AAAAA/4QA//+EAP8AAAAAAAAAAP+EALn/hABsAAAAAP+EAGz/hABsAAAAAAAAAAAAAAAA/4QA//+EAP8AAAAAAAAAAAAAAAD/hAD//4QA/wAAAAD/hAC5/4QA//+EAP//hAD//4QAuQAAAAAAAAAA/4QA//+EAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+EALn/hAC5/4QAuQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD//wAA//8AAPx/AADIMwAAm/kAADv8AAA7/AAAm/kAAMgzAAD8fwAA//8AAP//AAD//wAA//8AAA==" rel="icon" type="image/x-icon"/>
+    <link
+        href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/VAAAAAAAAP9UAAAAAAAA/1QAAAAAAAD/VAAAAAAAAP9UAAAAAAAA/1QAAAAAAAD/VAAAAAAAAP9UAAAAAAAAAAAAAP9UAAAAAAAA/1QAAAAAAAD/VAAAAAAAAP9UAAAAAAAA/1QAAAAAAAD/VAAAAAAAAP9UAAAAAAAA/1QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/4QAuf+EALn/hAC5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/4QA//+EAP8AAAAA/4QAuf+EAP//hAD//4QA//+EALkAAAAAAAAAAP+EAP//hAD/AAAAAAAAAAAAAAAA/4QA//+EAP8AAAAAAAAAAP+EALn/hABsAAAAAP+EAGz/hABsAAAAAAAAAAAAAAAA/4QA//+EAP8AAAAA/4QA//+EALkAAAAAAAAAAAAAAAD/hAD//4QAbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/hAC5/4QA//+EAP//hAC5AAAAAAAAAAAAAAAA/4QA//+EAGwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/4QAuf+EAP8AAAAA/4QA//+EAP8AAAAAAAAAAP+EALn/hABsAAAAAP+EAGz/hABsAAAAAAAAAAAAAAAA/4QA//+EAP8AAAAAAAAAAAAAAAD/hAD//4QA/wAAAAD/hAC5/4QA//+EAP//hAD//4QAuQAAAAAAAAAA/4QA//+EAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+EALn/hAC5/4QAuQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD//wAA//8AAPx/AADIMwAAm/kAADv8AAA7/AAAm/kAAMgzAAD8fwAA//8AAP//AAD//wAA//8AAA=="
+        rel="icon" type="image/x-icon" />
     <title>PRP - zkouškové otázky</title>
 </head>
+
 <body>
-    
+
+    <header class="hero is-medium is-primary is-bold">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title is-1">
+                    Otázky na zkoušku
+                </h1>
+                <h2 class="subtitle">
+                    PRP pro OI (2020/21)
+                </h2>
+            </div>
+        </div>
+    </header>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#001: Proč se programy v C rozdělují do hlavičkových souborů (.h) a zdrojových souborů (.c)?
+            </h2>
+            <p>Aby se zamezilo zbytečnému kopírování kódu.</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#002: Jaký význam má hlavičkový soubor zdrojových souborů programu v C?
+            </h2>
+            <p>Jsou v něm uloženy názvy funkcí s popisy a proměnné, které se používají ve více souborech. Stačí pak vždy
+                includovat hlavičkový soubor, kde je fce zadefinovaná.</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#003: Jak probíhá překlad a linkování (sestavení) programu v C?
+            </h2>
+            <p>Kompilátor (překladač) zkotroluje správnost kódu a převede kód z Cčka do objektového assembleru.
+                Linkování je pak část, která zajistí to, aby se nám celý program sestavil, připojili se k němu
+                potřebné knihovny a převedl se do
+                spustitelného formátu.</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#004: Vysvětlete rozdíl mezi překladem zdrojových souborů a linkováním programu?
+            </h2>
+            <p>Překlad vytváří objektový soubor v assembleru. Až linkování nám vytvoří spustitelný soubor propojený se
+                všemi knohovnami.</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#005: Co je to preprocesor a jaká je jeho funkce při překladu zdrojového souboru v jazyce C?
+            </h2>
+            <p>Jedná se o proces, který nám nahradí určité struktury v kódu. Místa obsahující <em>#include</em> nahradí
+                includovanými soubory, zadefinovaná makra (<em>#define</em>) vloží do souboru a podmínky v
+                hlavičkových souborech <em>#if</em> přeloží. Dále také tato část veškeré komentáře nahradí bílími znaky.
+            </p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#006: Popište proces vytvoření spustitelného programu ze zdrojových souborů jazyka C.
+            </h2>
+            <h3 class="title is-5">1. Preporocessing</h3>
+            <ul>
+                <li>odstraní komentáře</li>
+                <li>inlcuduje soubory</li>
+                <li>interpretuje makra</li>
+                <li>nahradí konentáře bílými znaky</li>
+                <li>vytvoří .i soubory</li>
+            </ul>
+            <h3 class="title is-5">2. Kompilace</h3>
+            <ul>
+                <li>přeloží .i -> assembleru</li>
+                <li>vyttvoří .s soubor</li>
+            </ul>
+            <h3 class="title is-5">3. Assembler</h3>
+            <ul>
+                <li>přeloží .s soubory do objektového kódu</li>
+                <li>vyttvoří .o soubory</li>
+            </ul>
+            <h3 class="title is-5">4. Linkování</h3>
+            <ul>
+                <li>objekotvý kód spojí s knihovanmi</li>
+                <li>vytvoří spustitelný soubor</li>
+            </ul>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#007: Jaké znáte překladače jazyka C?
+            </h2>
+            <p>clang, gcc, msvc</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#008: Jak zajistíme, že se hlavičkový soubor programu v C nevloží při překladu vícekrát?
+            </h2>
+            <p>Použítím <em>Include Guards</em>. Využiji makro v hlavičkovém souboru. (<em>#ifdefine, #define, #enddefine</em>)</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#009: Jak zajistíte možnost ovlivnit výslednou podobu programu při překladu? Např. Velikost bufferu definovanou symbolickou konstantou?
+            </h2>
+            <p>Konfigurací pomocí makra v hlavičkovém souboru či přepínačem.</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#010: Jak při překladu programu kompilátorem GCC nebo Clang rozšíříme seznam prohledávaných adresářů s hlavičkovými soubory?
+            </h2>
+            <p>Pomocí přepínače <em>-Idir</em>.</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#011: Záleží u kompilace programu kompilátorem GCC nebo Clang při specifikaci adresářů s hlavičkovými soubory na jejich pořadí?
+            </h2>
+            <p>Ano, závisí (v případě, že linkumem více knihoven).</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#012: Co způsobí definování makra preprocesoru NDEBUG v souvislosti s používáním funkce assert?
+            </h2>
+            <p>Pro zadefinování NDEBUG assert nefunguje.</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#013: Jaký tvar má hlavní funkce programu v C, která se spustí při spuštění programu v prostředí s operačním systémem?
+            </h2>
+            <p>int main(){...}.</p>
+            <p>Případně: int main(int argc, char *argv[]){...}.</p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                Made by <a href="https://github.com/petrkucerak/CVUT_PRP-zkouska" target="_BLANK">Petr Kučera</a>.
+            </p>
+            <p><strong>Chybky</strong> prosím reportovat <a
+                    href="https://github.com/petrkucerak/CVUT_PRP-zkouska/issues">sem</a>!</p>
+        </div>
+    </footer>
+
 </body>
+
 </html>
