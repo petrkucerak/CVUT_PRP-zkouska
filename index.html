@@ -220,7 +220,8 @@
             <h2 class="title is-4">
                 @c#019: Jak vkládáme do zdrojového souboru programu v C hlavičkové soubory jiných modulů nebo knihoven?
             </h2>
-            <p>Pomocí makra <em>#include</em>. Zde rozlišujeme zdali je soubor v systémové složce či ve složce se soubory.</p>
+            <p>Pomocí makra <em>#include</em>. Zde rozlišujeme zdali je soubor v systémové složce či ve složce se
+                soubory.</p>
         </div>
     </section>
     <section class="section">
@@ -236,98 +237,97 @@
             <h2 class="title is-4">
                 @c#021: Popište rozdíl mezi deklarací a definicí funkce v jazyce C?
             </h2>
-            <p>Při <strong>deklaraci</strong> nealokujeme místo pro funkci, ale pouze říkáme s jakými funkcemi budeme pracovat.</p>
-            <p>Naopak <strong>definice</strong> nám již rovnou alokuje místo pro danou funkci a jsou v ní rovnou napsány pokyny pro fci.</p>
+            <p>Při <strong>deklaraci</strong> nealokujeme místo pro funkci, ale pouze říkáme s jakými funkcemi budeme
+                pracovat.</p>
+            <p>Naopak <strong>definice</strong> nám již rovnou alokuje místo pro danou funkci a jsou v ní rovnou napsány
+                pokyny pro fci.</p>
         </div>
     </section>
     <section class="section">
         <div class="container content">
             <h2 class="title is-4">
-                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
-                zvolíte právě tuto hodnotu?
+                @c#022: Jak jsou předávány parametry funkci v jazyce C?
             </h2>
-            <p>0 - zvyk, konvence</p>
+            <p>Buďto <strong>hodnotou</strong> nebo <strong>pointerem</strong>, tedy odkazem na proměnnou.</p>
         </div>
     </section>
     <section class="section">
         <div class="container content">
             <h2 class="title is-4">
-                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
-                zvolíte právě tuto hodnotu?
+                @c#023: Co je to literál a co tímto pojmem označujeme?
             </h2>
-            <p>0 - zvyk, konvence</p>
+            <p>Konstanta uvnitř programu (<em>int a = 3;</em>).</p>
         </div>
     </section>
     <section class="section">
         <div class="container content">
             <h2 class="title is-4">
-                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
-                zvolíte právě tuto hodnotu?
+                @c#024: Jak lze v jazyce C realisovat předání parametru funkci odkazem?
             </h2>
-            <p>0 - zvyk, konvence</p>
+            <p>Předáme fci pointer ne hodnotu.</p>
         </div>
     </section>
     <section class="section">
         <div class="container content">
             <h2 class="title is-4">
-                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
-                zvolíte právě tuto hodnotu?
+                @c#025: Jak lze v jazyce C omezit viditelnost funkce pouze v rámci jednoho modulu (souboru .c)?
             </h2>
-            <p>0 - zvyk, konvence</p>
+            <p>Pomocí slova <em>static</em>.</p>
         </div>
     </section>
     <section class="section">
         <div class="container content">
             <h2 class="title is-4">
-                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
-                zvolíte právě tuto hodnotu?
+                @c#026: Je možné v jazyce C volat funkci ze sebe sama (rekurse)?
             </h2>
-            <p>0 - zvyk, konvence</p>
+            <p>Ano!</p>
         </div>
     </section>
     <section class="section">
         <div class="container content">
             <h2 class="title is-4">
-                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
-                zvolíte právě tuto hodnotu?
+                @c#027: Při volání funkce v jazyce C jsou předávány argumenty funkce, které se stanou lokálními
+                proměnnými. V jaké části paměti jsou tyto lokální proměnné při běhu programu uloženy?
             </h2>
-            <p>0 - zvyk, konvence</p>
+            <p>na zásobníku</p>
         </div>
     </section>
     <section class="section">
         <div class="container content">
             <h2 class="title is-4">
-                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
-                zvolíte právě tuto hodnotu?
+                @c#028: Jaké znáte kategorie proměnných z hlediska jejich umístění v paměti?
             </h2>
-            <p>0 - zvyk, konvence</p>
+            <ul>
+                <li>lokální proměnné - na zásobníku</li>
+                <li>dynamicky alokované - na haldě</li>
+                <li>globální a statické proměnné - na statických datech</li>
+                <li>literály - v literálech</li>
+                <li>strojové instrukce - v instrukcích programu</li>
+            </ul>
         </div>
     </section>
     <section class="section">
         <div class="container content">
             <h2 class="title is-4">
-                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
-                zvolíte právě tuto hodnotu?
+                @c#029: Je součástí jazyka C přímá podpora (tj. klíčové/á slovo jazyka) dynamická alokace paměti?
             </h2>
-            <p>0 - zvyk, konvence</p>
+            <p>Není. Je třeba naimportovat knihovnu <strong>stdlib.h</strong></p>
         </div>
     </section>
     <section class="section">
         <div class="container content">
             <h2 class="title is-4">
-                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
-                zvolíte právě tuto hodnotu?
+                @c#030: Jak v jazyce C dynamicky alokovat paměť za běhu programu?
             </h2>
-            <p>0 - zvyk, konvence</p>
+            <p>Pomocí fcí - <em>malloc()</em> nebo <em>calloc()</em>.</p>
         </div>
     </section>
     <section class="section">
         <div class="container content">
             <h2 class="title is-4">
-                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
-                zvolíte právě tuto hodnotu?
+                @c#031: Je v jazyce C nutné uvolňovat dynamicky alokovanou paměť? Pokud ano, jak to uděláte?
             </h2>
-            <p>0 - zvyk, konvence</p>
+            <p>Ano, pomocí fce <em>free()</em>.</p>
         </div>
     </section>
     <section class="section">
