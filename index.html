@@ -116,13 +116,15 @@
             <h2 class="title is-4">
                 @c#008: Jak zajistíme, že se hlavičkový soubor programu v C nevloží při překladu vícekrát?
             </h2>
-            <p>Použítím <em>Include Guards</em>. Využiji makro v hlavičkovém souboru. (<em>#ifdefine, #define, #enddefine</em>)</p>
+            <p>Použítím <em>Include Guards</em>. Využiji makro v hlavičkovém souboru. (<em>#ifdefine, #define,
+                    #enddefine</em>)</p>
         </div>
     </section>
     <section class="section">
         <div class="container content">
             <h2 class="title is-4">
-                @c#009: Jak zajistíte možnost ovlivnit výslednou podobu programu při překladu? Např. Velikost bufferu definovanou symbolickou konstantou?
+                @c#009: Jak zajistíte možnost ovlivnit výslednou podobu programu při překladu? Např. Velikost bufferu
+                definovanou symbolickou konstantou?
             </h2>
             <p>Konfigurací pomocí makra v hlavičkovém souboru či přepínačem.</p>
         </div>
@@ -130,7 +132,8 @@
     <section class="section">
         <div class="container content">
             <h2 class="title is-4">
-                @c#010: Jak při překladu programu kompilátorem GCC nebo Clang rozšíříme seznam prohledávaných adresářů s hlavičkovými soubory?
+                @c#010: Jak při překladu programu kompilátorem GCC nebo Clang rozšíříme seznam prohledávaných adresářů s
+                hlavičkovými soubory?
             </h2>
             <p>Pomocí přepínače <em>-Idir</em>.</p>
         </div>
@@ -138,7 +141,8 @@
     <section class="section">
         <div class="container content">
             <h2 class="title is-4">
-                @c#011: Záleží u kompilace programu kompilátorem GCC nebo Clang při specifikaci adresářů s hlavičkovými soubory na jejich pořadí?
+                @c#011: Záleží u kompilace programu kompilátorem GCC nebo Clang při specifikaci adresářů s hlavičkovými
+                soubory na jejich pořadí?
             </h2>
             <p>Ano, závisí (v případě, že linkumem více knihoven).</p>
         </div>
@@ -154,10 +158,284 @@
     <section class="section">
         <div class="container content">
             <h2 class="title is-4">
-                @c#013: Jaký tvar má hlavní funkce programu v C, která se spustí při spuštění programu v prostředí s operačním systémem?
+                @c#013: Jaký tvar má hlavní funkce programu v C, která se spustí při spuštění programu v prostředí s
+                operačním systémem?
             </h2>
             <p>int main(){...}.</p>
             <p>Případně: int main(int argc, char *argv[]){...}.</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
+                zvolíte právě tuto hodnotu?
+            </h2>
+            <p>0 - zvyk, konvence</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#015: Jak předáváme parametry programu implementovanému v jazyce C?
+            </h2>
+            <p>Při spouštění pomocí flagů. Fce main musí být ve tvaru int main(int argc, char *argv[]) kde
+                <strong>intiger argc </strong>je počet parametrů a <strong>char argv</strong> je pole stringů s názvy
+                parametrů.
+            </p>
+            <p>První parametr je vždy název souboru programu.</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#016: Existuje nějaká jiná možnost jak předat uživatelské parametry programu jinak než jako argument
+                programu?
+            </h2>
+            <p>Ano, pomocí standartního vstupu, systémové proměné nebo config file.</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#017: Jaký je rozdíl mezi staticky a dynamicky linkovaným programem implementovaným v jazyce C?
+            </h2>
+            <p><strong>Statické</strong> linkování programu linkuje všechny funkce z includovaných knihoven. Program pak
+                zabírá více místa.</p>
+            <p>Naopak <strong>dynamické</strong> linkování je na pamět šetrněšjí. V něm se linkují pouze používané fce z
+                includovaných knihoven.</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#018: Linkují ve výchozím nastavení překladače GCC nebo Clang statické nebo dynamické binární
+                spustitelné soubory?
+            </h2>
+            <p>dynamické soubory</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#019: Jak vkládáme do zdrojového souboru programu v C hlavičkové soubory jiných modulů nebo knihoven?
+            </h2>
+            <p>Pomocí makra <em>#include</em>. Zde rozlišujeme zdali je soubor v systémové složce či ve složce se soubory.</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#020: Jaký rozdíl mezi použitím #include &#60;soubor.h&#62; a #include “soubor.h”?
+            </h2>
+            <p>Rozlišuje zda se má soubor hledat v systémových knihovnách či v složce projektu.</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#021: Popište rozdíl mezi deklarací a definicí funkce v jazyce C?
+            </h2>
+            <p>Při <strong>deklaraci</strong> nealokujeme místo pro funkci, ale pouze říkáme s jakými funkcemi budeme pracovat.</p>
+            <p>Naopak <strong>definice</strong> nám již rovnou alokuje místo pro danou funkci a jsou v ní rovnou napsány pokyny pro fci.</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
+                zvolíte právě tuto hodnotu?
+            </h2>
+            <p>0 - zvyk, konvence</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
+                zvolíte právě tuto hodnotu?
+            </h2>
+            <p>0 - zvyk, konvence</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
+                zvolíte právě tuto hodnotu?
+            </h2>
+            <p>0 - zvyk, konvence</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
+                zvolíte právě tuto hodnotu?
+            </h2>
+            <p>0 - zvyk, konvence</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
+                zvolíte právě tuto hodnotu?
+            </h2>
+            <p>0 - zvyk, konvence</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
+                zvolíte právě tuto hodnotu?
+            </h2>
+            <p>0 - zvyk, konvence</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
+                zvolíte právě tuto hodnotu?
+            </h2>
+            <p>0 - zvyk, konvence</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
+                zvolíte právě tuto hodnotu?
+            </h2>
+            <p>0 - zvyk, konvence</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
+                zvolíte právě tuto hodnotu?
+            </h2>
+            <p>0 - zvyk, konvence</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
+                zvolíte právě tuto hodnotu?
+            </h2>
+            <p>0 - zvyk, konvence</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
+                zvolíte právě tuto hodnotu?
+            </h2>
+            <p>0 - zvyk, konvence</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
+                zvolíte právě tuto hodnotu?
+            </h2>
+            <p>0 - zvyk, konvence</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
+                zvolíte právě tuto hodnotu?
+            </h2>
+            <p>0 - zvyk, konvence</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
+                zvolíte právě tuto hodnotu?
+            </h2>
+            <p>0 - zvyk, konvence</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
+                zvolíte právě tuto hodnotu?
+            </h2>
+            <p>0 - zvyk, konvence</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
+                zvolíte právě tuto hodnotu?
+            </h2>
+            <p>0 - zvyk, konvence</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
+                zvolíte právě tuto hodnotu?
+            </h2>
+            <p>0 - zvyk, konvence</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
+                zvolíte právě tuto hodnotu?
+            </h2>
+            <p>0 - zvyk, konvence</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
+                zvolíte právě tuto hodnotu?
+            </h2>
+            <p>0 - zvyk, konvence</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
+                zvolíte právě tuto hodnotu?
+            </h2>
+            <p>0 - zvyk, konvence</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
+                zvolíte právě tuto hodnotu?
+            </h2>
+            <p>0 - zvyk, konvence</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container content">
+            <h2 class="title is-4">
+                @c#014: Jakou návratovou hodnotou programu v C indikujete úspěšné vykonání a ukončení programu? Proč
+                zvolíte právě tuto hodnotu?
+            </h2>
+            <p>0 - zvyk, konvence</p>
         </div>
     </section>
     <footer class="footer">
